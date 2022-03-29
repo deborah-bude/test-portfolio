@@ -1,4 +1,3 @@
-<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -447,42 +446,19 @@
                     </svg>
                 </div>
                 <form class="contact__form" action="./contact.php" method="post">
-                    <?php if (array_key_exists('success', $_SESSION)) : ?>
-                    <div class=" alert alert-success">
-                        Votre email a bien été envoyé.
-                    </div>
-                    <?php endif; ?>
                     <div class="contact__form-items">
                         <label for="name">Nom*</label>
                         <input class="contact__form-input" type="text" name="name" id="name" placeholder="Nom" required>
-                        <?php
-                                if ($_SESSION['errors']['name'] != '') : ?>
-                        <div class="alert alert-danger">
-                            <?= $_SESSION['errors']['name'] ?>
-                        </div>
-                        <?php endif ?>
                     </div>
                     <div class="contact__form-items">
                         <label for="firstname">Prénom*</label>
                         <input class="contact__form-input" type="text" name="firstname" id="firstname"
                             placeholder="Prénom" required>
-                        <?php
-                                if ($_SESSION['errors']['firstname'] != '') : ?>
-                        <div class="alert alert-danger">
-                            <?= $_SESSION['errors']['firstname'] ?>
-                        </div>
-                        <?php endif ?>
                     </div>
                     <div class="contact__form-items">
                         <label for="email">E-mail*</label>
                         <input class="contact__form-input" type="email" name="email" id="email" placeholder="E-Mail"
                             required>
-                        <?php
-                                if ($_SESSION['errors']['email'] != '') : ?>
-                        <div class="alert alert-danger">
-                            <?= $_SESSION['errors']['email'] ?>
-                        </div>
-                        <?php endif ?>
                     </div>
                     <div class="contact__form-items">
                         <label for="subject">Sujet</label>
@@ -492,12 +468,6 @@
                         <label for="message">Message*</label>
                         <textarea class="contact__form-input" name="message" id="message" cols="30" rows="5"
                             placeholder="Message" required></textarea>
-                        <?php
-                            if ($_SESSION['errors']['message'] != '') : ?>
-                        <div class="alert alert-danger">
-                            <?= $_SESSION['errors']['message'] ?>
-                        </div>
-                        <?php endif ?>
                     </div>
                     <button class="button" type="submit">Envoyer</button>
                 </form>
@@ -519,9 +489,3 @@
 </body>
 
 </html>
-
-<?php
-unset($_SESSION['inputs']);
-unset($_SESSION['success']);
-unset($_SESSION['errors']);
-?>
