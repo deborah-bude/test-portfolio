@@ -8,7 +8,7 @@ const jour_nuit = {
 function init() {
     jour_nuit.journuit_btn = document.querySelector(".entete_jour-nuit");
     jour_nuit.journuit_body = document.querySelector("body");
-    
+
     listenerEvent();
 
     vueJS();
@@ -17,6 +17,19 @@ function init() {
 function listenerEvent() {
     //mode jour/nuit
     jour_nuit.journuit_btn.addEventListener("click", jourNuit);
+
+    $('.entete_items:first-child a').on('click', smoothScroll);
+    $('.entete_items:nth-child(2) a').on('click', smoothScroll);
+    $('.entete_items:nth-child(3) a').on('click', smoothScroll);
+    $('.entete_items:last-child a').on('click', smoothScroll);
+    $('.button__scroll').on('click', smoothScroll);
+}
+
+function smoothScroll() {
+    var page = $(this).attr('href'); // Page cible
+    var speed = 500; // Durée de l'animation (en ms)
+    $('html, body').animate({ scrollTop: $(page).offset().top }, speed); // Go
+    return false;
 }
 
 function vueJS() {
@@ -138,7 +151,7 @@ function mobileMenu() {
         menu.nav.classList.add('open')
         menu.icon.classList.add('open')
     }
-    else{
+    else {
         menu.nav.classList.remove('open')
         menu.icon.classList.remove('open')
     }
