@@ -3,3 +3,4 @@ assets/scss
 webpack.config.js
 package.json
 package-lock.json
+gitignore
