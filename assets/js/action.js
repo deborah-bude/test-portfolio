@@ -1,42 +1,13 @@
 const jour_nuit = {
     journuit_body: null,
     journuit_btn: null,
-    btn: null,
-    entete: null,
-    jour_nuit_span: null,
-    titre: null,
-    apropos: null,
-    competences: null,
-    realisations: null,
-    contact: null,
-    footer: null
 }
 
-const menu = {
-    icon: null,
-    nav: null,
-    icon_part1: null,
-    icon_part2: null,
-    icon_part3: null,
-}
 
 
 function init() {
-    console.log(document.readyState)
-
     jour_nuit.journuit_btn = document.querySelector(".entete_jour-nuit");
     jour_nuit.journuit_body = document.querySelector("body");
-    jour_nuit.entete = document.querySelector(".entete_nav");
-    jour_nuit.jour_nuit_span = document.querySelector(".jour_nuit-span");
-    jour_nuit.titre = document.querySelectorAll(".titre-section");
-    jour_nuit.apropos = document.querySelector("#a_propos");
-    jour_nuit.competences = document.querySelector("#competences");
-    jour_nuit.realisations = document.querySelector("#realisations");
-    jour_nuit.contact = document.querySelector("#contact");
-    jour_nuit.footer = document.querySelector("footer");
-
-    menu.icon = document.querySelector(".entete_mobile-menu");
-    menu.nav = document.querySelector(".entete_computer-menu");
     
     listenerEvent();
 
@@ -46,8 +17,6 @@ function init() {
 function listenerEvent() {
     //mode jour/nuit
     jour_nuit.journuit_btn.addEventListener("click", jourNuit);
-
-    menu.icon.addEventListener("click", mobileMenu);
 }
 
 function vueJS() {
@@ -156,50 +125,15 @@ function vueJS() {
 
 //fonction jour nuit
 function jourNuit() {
-    if (jour_nuit.journuit_btn.classList.toggle("btn_night")) {
-        jour_nuit.journuit_body.classList.add("body_night")
-        //entete
-        jour_nuit.journuit_btn.classList.add("btn_night");
-        jour_nuit.entete.classList.add("entete_nav__night");
-        jour_nuit.jour_nuit_span.classList.add("jour_nuit_span_night");
-        //titre
-        for (let i = 0; i < jour_nuit.titre.length; i++) {
-            jour_nuit.titre[i].classList.add("section__titre_night");
-        }
-        //apropos
-        jour_nuit.apropos.classList.add("apropos_night");
-        //competences
-        jour_nuit.competences.classList.add("competences_night");
-        //rea
-        jour_nuit.realisations.classList.add("realisations_night");
-        //contact
-        jour_nuit.contact.classList.add("contact_night");
-        jour_nuit.footer.classList.add("footer_night");
+    if (jour_nuit.journuit_btn.classList.toggle("night_mode_btn")) {
+        jour_nuit.journuit_body.classList.add("night_mode")
     }
     else {
-        jour_nuit.journuit_body.classList.remove("body_night")
-        //entete
-        jour_nuit.journuit_btn.classList.remove("btn_night");
-        jour_nuit.entete.classList.remove("entete_nav__night");
-        jour_nuit.jour_nuit_span.classList.remove("jour_nuit_span_night");
-        //titre
-        for (let i = 0; i < jour_nuit.titre.length; i++) {
-            jour_nuit.titre[i].classList.remove("section__titre_night");
-        }
-        //apropos
-        jour_nuit.apropos.classList.remove("apropos_night");
-        //competences
-        jour_nuit.competences.classList.remove("competences_night");
-        //rea
-        jour_nuit.realisations.classList.remove("realisations_night");
-        //contact
-        jour_nuit.contact.classList.remove("contact_night");
-        jour_nuit.footer.classList.remove("footer_night");
+        jour_nuit.journuit_body.classList.remove("night_mode")
     }
 }
 
 function mobileMenu() {
-    console.log(menu.nav);
     if (menu.nav.classList.toggle('open')) {
         menu.nav.classList.add('open')
         menu.icon.classList.add('open')
