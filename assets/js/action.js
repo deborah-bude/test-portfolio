@@ -3,11 +3,23 @@ const jour_nuit = {
     journuit_btn: null,
 }
 
-
+const popupAccessibility = {
+    btn: null,
+    popup: null,
+    selectAnimation: null,
+    selectFont: null,
+    inputSpacingLine: null,
+    inputSpacingParagraher: null,
+    inputSpacingWord: null,
+    close: null,
+}
 
 function init() {
     jour_nuit.journuit_btn = document.querySelector(".entete_jour-nuit");
     jour_nuit.journuit_body = document.querySelector("body");
+    popupAccessibility.btn = document.querySelector(".button--accessibility");
+    popupAccessibility.popup = document.querySelector(".accessibility-popup");
+    popupAccessibility.close = document.querySelector(".close");
 
     listenerEvent();
 
@@ -17,6 +29,9 @@ function init() {
 function listenerEvent() {
     //mode jour/nuit
     jour_nuit.journuit_btn.addEventListener("click", jourNuit);
+    popupAccessibility.btn.addEventListener("click", () => {})
+    popupAccessibility.btn.addEventListener("click", () => {popupAccessibility.popup.style.display="block"})
+    popupAccessibility.close.addEventListener("click", () => {popupAccessibility.popup.style.display="none"})
 
     $('.entete_items:first-child a').on('click', smoothScroll);
     $('.entete_items:nth-child(2) a').on('click', smoothScroll);
