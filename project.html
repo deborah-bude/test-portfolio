@@ -5,24 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Réalisations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;700&family=Mulish:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="public/main.css">
+    <title>Réalisations | Portfolio Déborah Bude</title>
 </head>
 
 <body>
     <header class="entete">
         <div class="entete_container">
-            <span class="entete_mobile-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </span>
             <div class="entete_computer-menu">
                 <nav class="entete_nav">
-                    <a class="entete_items" href="#a-propos">À propos</a>
-                    <a class="entete_items" href="#competences">Mes compétences</a>
-                    <a class="entete_items" href="#realisations">Mes réalisations</a>
-                    <a class="entete_items" href="#contact">Contact</a>
+                    <a class="entete_items" href="./index.html">Retour au portfolio</a>
                 </nav>
+
+                <h1 class="entete_page">Site et application Snowpiercer</h1>
+
                 <div class="entete_jour-nuit">
                     <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <title>Icône mode jour</title>
@@ -42,33 +43,76 @@
         </div>
     </header>
 
-    <section>
-        <div>
-            <h1 class="title"></h1>
-            <img src="" alt="">
-        </div>
-        <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem placeat ducimus nihil alias! Molestiae
-                consequatur quod aut. Illo, consectetur, accusantium iusto optio magnam fugiat incidunt est corporis
-                deserunt reiciendis minus.</p>
-        </div>
-    </section>
+    <main class="corps_page--interieur">
+        <section>
+            <h1 class="title">Snowpiercer</h1>
+            <h2>Mes réalisations | <span>Maquette UX</span></h2>
+        </section>
+        <section class="intro">
+            <div>
+                <img src="./assets/projects/snowpiercer.png" alt="description de l'image">
+            </div>
+            <div>
+                <p>Ce projet de classe est une maquette UX d'une page web in-universe réalisé sur la série Snowpiercer.
+                    Elle est accompagnée d'une application servant aux personnes visionnant la série.</p>
+                <p>La partie web va promouvoir la série, alors que l'application sera connecté au compte netflix de la
+                    personne et lui dira où il est dans son visionnage, en plus de réserver quelques bonus pour les plus
+                    fans de la série.</p>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </section>
 
-    <section>
-        <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem placeat ducimus nihil alias! Molestiae
-                consequatur quod aut. Illo, consectetur, accusantium iusto optio magnam fugiat incidunt est corporis
-                deserunt reiciendis minus.</p>
+        <section class="details">
+            <div>
+                <h2>Plus de détail ?</h2>
+                <p>Le site est une one page assez simple avec un résumé du film, puis la présentation des
+                    personnages, du train et finalement une invitation à réserver ses billets. Afin de rester dans
+                    l'ambience de la série, un ton sombre a été donné avec des effets de gel et de givre en arrière
+                    plan. L'application est accessible seulement en prenant les billets de première classe, pour les
+                    autres, la personne sera simplement invité regarder la série sur Netflix. Ce choix se fait par
+                    simple clic, il n'y a pas de réel achat.</p>
+                <p>L'application est un petit plus pour les fans voulant suivre la série. La personne sera traité comme
+                    un passagé de première classe, il n'y aura donc pas de spoil sur les futurs épisodes. Elle est
+                    composée d'une carte qui suivra en temps réel le trajet du train de la série en se basant sur
+                    l'épisode en cours. Il sera possible de voir plus de détails qu'en au trajet, avec les villes exactes
+                    que le train traverse et les prochaines destinations.
+                </p>
+                <p>Une seconde partie de l'application sera réversé au passport du passager. Ce passport contiendra les
+                    détails du profil de la personne ainsi que des tampons indiquant les épisodes vu sans révéler ceux
+                    qui suivent.</p>
+                <p>La dernière partie de l'application est une sorte de mini jeu où le passager pourra discuter avec les
+                    autres personnages de la série. Il s'agira de choix multiples. Il pourra discuter en premier avec
+                    les passagers de première classe, étant lui même un passager de première classe. Il y a plusieurs
+                    moyens de débloquer d'autres personnages : soit par la série qui avance, soit par les choix faits
+                    dans les dialogues.</p>
+            </div>
+            <div>
+                <ul>
+                    <li>Date: Décembre 2020</li>
+                    <li>Logiciels: Figma</li>
+                    <li>Particularité du projet: le côté in-universe demandé.</li>
+                    <li>Difficultés rencontrées: faire une maquette d'encré dans l'univers de Snowpiercer sans raconter
+                        tous les scénarios, tout particulièrement l'application.</li>
+                </ul>
+                <a class="button" href="">Voir le projet</a>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="pied-page">
+        <div class="pied-page__container">
+            <p>Copyright© 2021 deborah-bude | Tout droits réservés</p>
+            <a href="./mentions-legales.html">Mentions Légales</a>
         </div>
-        <div>
-            <ul>
-                <li>Date: </li>
-                <li>Logiciels: </li>
-                <li>etc... </li>
-            </ul>
-            <a class="button" href="">Voir le projet</a>
-        </div>
-    </section>
+    </footer>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="./public/js/jsonAPI.js"></script>
 </body>
 
 </html>

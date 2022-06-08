@@ -1,6 +1,3 @@
 node_modules
-assets/scss
-webpack.config.js
-package.json
-package-lock.json
+scss
 gitignore

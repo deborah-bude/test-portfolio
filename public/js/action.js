@@ -35,10 +35,46 @@ async function init() {
     popupAccessibility.spacingParagraphe = document.getElementById("spacing-paragraphe");
     popupAccessibility.spacingWord = document.getElementById("spacing-word");
 
+    const { allCompetences } = await getcompetences();
+    integrationCompetences(allCompetences);
+
     const { allRealisations } = await getRealisations();
     integrationRealisations(allRealisations);
 
     listenerEvent();
+}
+
+function integrationCompetences (allCompetences) {
+    let competenceCol1 = [];
+    let competenceCol2 = [];
+    
+    const divcompetenceCol1 = document.querySelector(".col1");
+    const divcompetenceCol2 = document.querySelector(".col2");
+
+    for (let i = 0; i < allCompetences.length; i++) {
+        const { title, description, img } = allCompetences[i]
+        const divCompetences = 
+        `<div class="competences__items">
+            <div class="front">
+                <img class="competences__image" src="./assets/${img}" alt="Icône programmation">
+                <p class="competences__title">${title}</p>
+                <p class="competences__desc">${description}</p>
+            </div>
+            <div class="back">
+                <p>${title}</p>
+                <p>${description}</p>
+            </div>
+        </div>`;
+
+        if (allCompetences.length / 2 > i) {
+            competenceCol1.push(divCompetences)
+        } else {
+            competenceCol2.push(divCompetences)
+        }
+    }
+    
+    divcompetenceCol1.innerHTML = competenceCol1.join('');
+    divcompetenceCol2.innerHTML = competenceCol2.join('');
 }
 
 function integrationRealisations(allRealisations) {
@@ -63,8 +99,6 @@ function integrationRealisations(allRealisations) {
         articleRealisation.push(htmlRealisation);
     });
 
-    console.log(articleRealisation)
-    console.log(articleRealisation.join(''))
     divRealisations.innerHTML = articleRealisation.join('');
 }
 

@@ -97,19 +97,19 @@
             <ul class="presentation__network">
                 <li class="presentation__network-items">
                     <a href="https://www.github.com/deborah-bude" target="_blank"><img
-                            src="./assets/data/social/github.svg" alt="Icône Github"></a>
+                            src="./assets/social/github.svg" alt="Icône Github"></a>
                 </li>
                 <li class="presentation__network-items">
                     <a href="https://www.behance.net/dborahbude" target="_blank"><img
-                            src="./assets/data/social/behance.svg" alt="Icône Behance"></a>
+                            src="./assets/social/behance.svg" alt="Icône Behance"></a>
                 </li>
                 <li class="presentation__network-items">
                     <a href="https://www.youtube.com/channel/UC7q9Is0XoD5FT7phI1AfrHA" target="_blank"><img
-                            src="./assets/data/social/youtube.svg" alt="Icône Youtube"></a>
+                            src="./assets/social/youtube.svg" alt="Icône Youtube"></a>
                 </li>
                 <li class="presentation__network-items">
                     <a href="https://fr.linkedin.com/in/d%C3%A9borah-bude-74b59a177" target="_blank"><img
-                            src="./assets/data/social/linkedin.svg" alt="Icône Linkedin"></a>
+                            src="./assets/social/linkedin.svg" alt="Icône Linkedin"></a>
                 </li>
             </ul>
             <a class="button__scroll" href="#a-propos">
@@ -322,7 +322,7 @@
     <main class="corps_page">
         <section id="a-propos">
             <div class="a-propos__img">
-                <img src="./assets/data/image_presentation.jpg" alt="">
+                <img src="./assets/image_presentation.jpg" alt="Photo de présentation">
             </div>
             <div class="a-propos__desc">
                 <h2 class="titre">À propos</h2>
@@ -391,32 +391,8 @@
             </div>
 
             <div id="competences__li">
-                <div class="competences__cards">
-                    <div v-for="competence in competences_col_1" class="competences__items">
-                        <div class="front">
-                            <img class="competences__image" :src="competence.img" alt="Icône programmation">
-                            <p class="competences__title">{{competence.title}}</p>
-                            <p class="competences__desc">{{competence.desc}}</p>
-                        </div>
-                        <div class="back">
-                            <p>{{competence.title}}</p>
-                            <p>{{competence.desc}}</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="competences__cards">
-                    <div v-for="competence in competences_col_2" class="competences__items">
-                        <div class="front">
-                            <img class="competences__image" :src="competence.img" alt="Icône programmation">
-                            <p class="competences__title">{{competence.title}}</p>
-                            <p class="competences__desc">{{competence.desc}}</p>
-                        </div>
-                        <div class="back">
-                            <p>{{competence.title}}</p>
-                            <p>{{competence.desc}}</p>
-                        </div>
-                    </div>
-                </div>
+                <div class="competences__cards col1"></div>
+                <div class="competences__cards col2"></div>
             </div>
         </section>
 
@@ -428,25 +404,7 @@
                 <button class="button--filter">Programmation</button>
                 <button class="button--filter">Maquette UX</button>
             </div>
-            <div class="realisations__div">
-                <!-- <article class="realisations__items" v-for="(realisation, index) in realisations">
-                    <img class="realisations__image" :src="realisation.img" :alt="realisation.alt_img">
-                    <div class="realisations__details">
-                        <h4 class="realisations__titre">{{realisation.project}}</h4>
-                        <p class="realisations__logiciel">
-                            <template v-for="(logiciel, index) in realisation.logiciels"
-                                v-if="realisation.logiciels.length-1 === index">
-                                {{logiciel}}
-                            </template>
-                            <template v-else>
-                                {{logiciel + separator}}
-                            </template>
-                        </p>
-                        <p class="realisations__desc">{{realisation.description}}</p>
-                        <a v-if="realisation.url" :href="realisation.url" class="button">Voir le projet</a>
-                    </div>
-                </article> -->
-            </div>
+            <div class="realisations__div"></div>
         </section>
         <div id="contact">
             <section class="contact">
@@ -459,19 +417,19 @@
                     <ul class="contact__network">
                         <li class="contact__network-items">
                             <a href="https://www.github.com/deborah-bude" target="_blank"><img
-                                    src="./assets/data/social/github.svg" alt="Icône Github"></a>
+                                    src="./assets/social/github.svg" alt="Icône Github"></a>
                         </li>
                         <li class="contact__network-items">
                             <a href="https://www.behance.net/dborahbude" target="_blank"><img
-                                    src="./assets/data/social/behance.svg" alt="Icône Behance"></a>
+                                    src="./assets/social/behance.svg" alt="Icône Behance"></a>
                         </li>
                         <li class="contact__network-items">
                             <a href="https://www.youtube.com/channel/UC7q9Is0XoD5FT7phI1AfrHA" target="_blank"><img
-                                    src="./assets/data/social/youtube.svg" alt="Icône Youtube"></a>
+                                    src="./assets/social/youtube.svg" alt="Icône Youtube"></a>
                         </li>
                         <li class="contact__network-items">
                             <a href="https://fr.linkedin.com/in/d%C3%A9borah-bude-74b59a177" target="_blank"><img
-                                    src="./assets/data/social/linkedin.svg" alt="Icône Linkedin"></a>
+                                    src="./assets/social/linkedin.svg" alt="Icône Linkedin"></a>
                         </li>
                     </ul>
                     <svg class="contact-fleche" width="173" height="196" viewBox="0 0 173 196" fill="none"
@@ -555,8 +513,8 @@
     </footer>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <script src="./assets/js/jsonAPI.js"></script>
-    <script src="./assets/js/action.js"></script>
+    <script src="./public/js/jsonAPI.js"></script>
+    <script src="./public/js/action.js"></script>
 </body>
 
 </html>

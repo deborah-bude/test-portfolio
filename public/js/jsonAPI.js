@@ -1,13 +1,12 @@
 function getcompetences() {
-    let competences;
-    return fetch('../public/project.json')
+    let allCompetences;
+    return fetch('./public/js/project.json')
     .then(function (response) {
         return response.json()
     })
     .then((object) => {
-        console.log(object.competences)
         return ({
-            competences: object.competences
+            allCompetences: object.competences
         })
     })
     .catch(function (error) {
@@ -17,7 +16,7 @@ function getcompetences() {
 
 async function getRealisations() {
     let allRealisations;
-    return fetch('./public/project.json')
+    return fetch('./public/js/project.json')
     .then(function (response) {
         return response.json()
     })

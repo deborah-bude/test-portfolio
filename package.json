@@ -1,0 +1,27 @@
+{
+  "name": "portfolio-v4",
+  "version": "1.4.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./scss/main.scss:./public/main.css",
+    "prefix": "postcss ./public/main.css --use autoprefixer -d ./public/prefixed/",
+    "project-oc": "postcss ./prefix/without/main.css --use autoprefixer -d ./prefix/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deborah-bude/DeborahBude_3_29102021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/deborah-bude/DeborahBude_3_29102021/issues"
+  },
+  "homepage": "https://github.com/deborah-bude/DeborahBude_3_29102021#readme",
+  "dependencies": {
+    "autoprefixer": "^10.4.4"
+  },
+  "devDependencies": {},
+  "description": ""
+}
