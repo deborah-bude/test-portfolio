@@ -11,6 +11,9 @@ async function init() {
     document.querySelector("#project_image").src = `./assets/projects/${project.img}`;
     document.querySelector("#project_image").alt = `./assets/projects/${project.alt_img}`;
     document.querySelector("#project_details").innerHTML = `<p>${project.details}</p>`;
+    document.querySelector("#date").innerHTML = project.date;
+    document.querySelector("#logiciels").innerHTML = project.logiciels;
+    document.querySelector(".button").href = project.url;
 
     let listDifficultes = [];
     project.difficultes.forEach(difficulte => {

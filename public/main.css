@@ -7,9 +7,10 @@
  * 5 - Réalisations
  * 6 - Contact
  * 7 - Footer
- * 8 - Responsive
- * 9 - Mode nuit
- * 10 - Animations
+ * 8 - Page des projets et réalisations
+ * 9 - Responsive
+ * 10 - Mode nuit
+ * 11 - Animations
  */
 html {
   font-size: 62.5%;
@@ -68,7 +69,7 @@ h1 {
   font-size: 3.6rem;
 }
 
-.entete_page {
+#entete_page {
   color: white;
   font-size: 2.8em;
   margin: 0;
@@ -757,13 +758,15 @@ input ::placeholder, textarea ::placeholder {
 }
 
 /*** 8 - Page des projets et réalisations***/
-.intro, .details {
+.intro,
+.details {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
-.intro div, .details div {
+.intro div,
+.details div {
   width: 45%;
 }
 
@@ -782,6 +785,38 @@ input ::placeholder, textarea ::placeholder {
   height: 2px;
   background: #FFAF00;
   margin-right: 10px;
+}
+
+#difficultes li {
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 15px;
+}
+#difficultes li::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  background-color: #FFAF00;
+  border-radius: 5px;
+}
+
+.project_characteristics li {
+  position: relative;
+  padding-left: 60px;
+  margin-bottom: 15px;
+}
+.project_characteristics li::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background-color: #FFAF00;
+  border-radius: 5px;
 }
 
 /*** 9 - Responsive ***/
