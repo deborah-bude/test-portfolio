@@ -20,8 +20,8 @@
   },
   "homepage": "https://github.com/deborah-bude/DeborahBude_3_29102021#readme",
   "dependencies": {
-    "autoprefixer": "^10.4.4"
+    "autoprefixer": "^10.4.4",
+    "isotope-layout": "^3.0.6"
   },
-  "devDependencies": {},
   "description": ""
 }

@@ -30,6 +30,7 @@
             "alt_img": "Différentes vues du nouveau site de Campus à Cultiver",
             "date": "Mai 2021",
             "logiciels": "Wordpress | ACF | PHP | CSS",
+            "difficultes": ["Création d'un thème entier Wordpress", "Familiarisation avec le PHP pour ce même CMS", "Confection du front et back-end"],
             "description": "Projet tuteuré pour l'association Campus à Cultiver avec Mickaël Pedros et Margot Robert Piel avec une création de thème Wordpress",
             "details": "Site réalisé durant un projet tuteuré pour l'association Campus à Cultiver avec deux camarades de classe, Mickaël Pedros et Margot Robert Piel. Nous avons créé un thème wordpress en utilisant ACF pour le contenu statique en plus d’une partie blog qui sera mise à jour automatiquement à chaque article posté.",
             "url": "http://www.campusacultiver.deborah-bude.fr"
@@ -40,7 +41,8 @@
             "img": "agence-xpvr.png",
             "alt_img": "Différentes vues du nouveau site de l'Agence XPVR",
             "date": "Avril 2021",
-            "logiciels": "Divi | Figma | JS",
+            "logiciels": "Wordpress | Divi | Figma | JS",
+            "difficultes": ["Première prise en main de Divi", "Gestion de projet seule de A à Z", "Collaboration avec une agence de communication"],
             "description": "Refonte de site web Wordpress réalisé durant mon alternance chez XPVR, une agence de production de film 360",
             "details": "Refonte de site web réalisé durant mon alternance chez XPVR, une agence de production de film 360 dédié aux professionnels. Les couleurs et graphismes principaux ont été choisi par L'Agence, une agence de communication à Limoges, quant à moi, j'ai réalisé les maquettes sur Figma et ait mis en ligne le site sur Wordpress en utilisant Divi.",
             "url": "http://www.agence-xpvr.fr"
@@ -52,6 +54,7 @@
             "alt_img": "Différentes vues du projet sur Node JS",
             "date": "Février 2021",
             "logiciels": "PHP | My SQL | CSS",
+            "difficultes": ["Gestion d'une base MySQL", "Apprentissage du back-end", "Confection du front et back-end"],
             "description": "Projet de programmation avec NodeJS en back-end fait durant mon année de LP Web Design Sensoriel à Limoges en 2020-2021",
             "details": "Projet de programmation fait durant mon année de LP Web Design Sensoriel à Limoges en 2020-2021. Ce projet utilise NodeJS afin de pouvoir apprendre à faire des applications JS en faisant du back-end en même temps sans forcément utiliser du PHP pour cela."
         },
@@ -62,6 +65,7 @@
             "alt_img": "Différentes vues de la maquette UX Snowpiercer",
             "date": "Décembre 2020",
             "logiciels": "Figma",
+            "difficultes": ["Maquette web et application in universe", "lol", "Confection du front et back-end"],
             "description": "Maquette UX in-universe réalisé sur Snowpiercer accompagné d'une application pour accompagner les personnes durant la série",
             "url": "https://www.figma.com/proto/WjMPTIfVXAo7JDf7SJF60d/UX-Design---Snowpiercer?node-id=21%3A48&scaling=scale-down&page-id=0%3A1&starting-point-node-id=128%3A2&show-proto-sidebar=1"
         },
@@ -72,6 +76,7 @@
             "alt_img": "Différentes vues de la maquette UX Ghibli",
             "date": "Mars 2021",
             "logiciels": "Figma",
+            "difficultes": ["Création d'un thème entier Wordpress", "Familiarisation avec le PHP pour ce même CMS", "Confection du front et back-end"],
             "description": "Maquette UX d'une application sur le parc d'attraction Ghibli en vu de son ouverture avec une expérience avant, pendant et après la visite du parc"
         },
         {
@@ -81,6 +86,7 @@
             "alt_img": "Maquette ordinateur, tablette et téléphone site Les Dix Lunes",
             "date": "Mars 2022",
             "logiciels": "Figma",
+            "difficultes": ["Création d'un thème entier Wordpress", "Familiarisation avec le PHP pour ce même CMS", "Confection du front et back-end"],
             "description": "Maquette UX d'une application sur le parc d'attraction Ghibli en vu de son ouverture avec une expérience avant, pendant et après la visite du parc"
         }
     ]

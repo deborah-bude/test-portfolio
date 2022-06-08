@@ -22,7 +22,7 @@
                     <a class="entete_items" href="./index.html">Retour au portfolio</a>
                 </nav>
 
-                <h1 class="entete_page">Site et application Snowpiercer</h1>
+                <h1 id="entete_page">Site et application Snowpiercer</h1>
 
                 <div class="entete_jour-nuit">
                     <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -45,20 +45,20 @@
 
     <main class="corps_page--interieur">
         <section>
-            <h1 class="title">Snowpiercer</h1>
-            <h2>Mes réalisations | <span>Maquette UX</span></h2>
+            <h1 id="title">Snowpiercer</h1>
+            <h2 id="project_cat">Mes réalisations | <span>Maquette UX</span></h2>
         </section>
         <section class="intro">
             <div>
-                <img src="./assets/projects/snowpiercer.png" alt="description de l'image">
+                <img id="project_image" src="./assets/projects/snowpiercer.png" alt="description de l'image">
             </div>
             <div>
-                <p>Ce projet de classe est une maquette UX d'une page web in-universe réalisé sur la série Snowpiercer.
+                <p id="project_details">Ce projet de classe est une maquette UX d'une page web in-universe réalisé sur la série Snowpiercer.
                     Elle est accompagnée d'une application servant aux personnes visionnant la série.</p>
-                <p>La partie web va promouvoir la série, alors que l'application sera connecté au compte netflix de la
+                <!-- <p>La partie web va promouvoir la série, alors que l'application sera connecté au compte netflix de la
                     personne et lui dira où il est dans son visionnage, en plus de réserver quelques bonus pour les plus
-                    fans de la série.</p>
-                <ul>
+                    fans de la série.</p> -->
+                <ul id="difficultes">
                     <li></li>
                     <li></li>
                     <li></li>
@@ -68,7 +68,7 @@
 
         <section class="details">
             <div>
-                <h2>Plus de détail ?</h2>
+                <h2>Vous voulez en savoir plus ?</h2>
                 <p>Le site est une one page assez simple avec un résumé du film, puis la présentation des
                     personnages, du train et finalement une invitation à réserver ses billets. Afin de rester dans
                     l'ambience de la série, un ton sombre a été donné avec des effets de gel et de givre en arrière
@@ -113,6 +113,8 @@
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="./public/js/jsonAPI.js"></script>
+    <script src="./public/js/nuit_jour.js"></script>
+    <script src="./public/js/presentation_project.js"></script>
 </body>
 
 </html>

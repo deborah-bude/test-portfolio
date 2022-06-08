@@ -711,7 +711,7 @@ body.malvoyant-font * {
   margin-top: 50px;
   border: 2px solid;
 }
-.button--filter {
+.button--items {
   background: none;
   border: #FFAF00 3px solid;
   font-size: 1.8rem;
@@ -722,11 +722,11 @@ body.malvoyant-font * {
   text-transform: capitalize;
   transition: 0.5s;
 }
-.button--filter.active, .button--filter:hover {
+.button--items.active, .button--items:hover {
   background: #FFAF00;
   color: #000000;
 }
-.button--filter.active:hover, .button--filter:hover {
+.button--items.active:hover, .button--items:hover {
   border-color: #000000;
 }
 .button__scroll {
@@ -765,6 +765,23 @@ input ::placeholder, textarea ::placeholder {
 }
 .intro div, .details div {
   width: 45%;
+}
+
+.project_cat {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.project_cat:before {
+  content: "";
+  display: inline-block;
+  width: 95px;
+  height: 2px;
+  background: #FFAF00;
+  margin-right: 10px;
 }
 
 /*** 9 - Responsive ***/
@@ -989,7 +1006,7 @@ input ::placeholder, textarea ::placeholder {
 .night_mode .button--filter:hover {
   background: #e79e00;
 }
-.night_mode .button--filter:not(.active):not(.button--filter:hover) {
+.night_mode .button--filter:not(.active):not(.button--items:hover) {
   color: #dfd8c8;
 }
 .night_mode .night_mode_btn .jour_nuit-span:before {
